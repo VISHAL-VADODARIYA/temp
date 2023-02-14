@@ -13,15 +13,13 @@
     <div class="container">
         <div class="header">
             <div class="image">
-                <image width="70px" height="100%"
-                    src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nlyp3wginjtr4jee8zon"
-                    alt="radix logo"></image>
+                <image width="70px" height="100%" src="download.jpeg" alt="radix logo"></image>
             </div>
             <div class="nav">
                 <a href="../index.html">Home</a>
                 <a href="../html.html">HTML</a>
                 <a href="../css.html">CSS</a>
-                <a href="">Bootstrap</a>
+                <a href="#">Bootstrap</a>
                 <a href="#">JavaScript</a>
                 <a href="#">JQuery</a>
                 <a href="#">Mini Project</a>
@@ -36,6 +34,7 @@
                         <li>Assignment</li>
                         <ul>
                             <li><a href="assignment1.html">Assignmnet 1</a></li>
+                            <li><a href="assignment2.html">Assignmnet 2</a></li>
                         </ul>
                     </ul>
                     <ul>
@@ -48,67 +47,109 @@
                 </ul>
             </div>
             <div class="image">
-                <form id="form">
-                    <table>
-                        <caption>
-                            <h1>Employee Table</h1>
-                        </caption>
+                <h1>Employee Form</h1>
+                <table>
+                    <caption> </caption>
+                    <form>
+                        <th></th>
+
+
                         <tr>
-                            <th><label for="EN-input">Employee Name :</label></th>
-                            <td><input type="text" id="EN-input" required placeholder=Name></td>
+                            <td>
+                                <label for="name"> Name :</label>
+                            </td>
+                            <td>
+                                <input type="text" id="name" required>
+                            </td>
+
                         </tr>
                         <tr>
-                            <th><label for="age">Age :</label></th>
-                            <td><input type="number" id="age" required pattern="[0-9]{2}" minlength="2" maxlength="2">
+                            <td>
+                                <label for="age"> Age :</label>
+                            </td>
+                            <td>
+                                <input type="number" id="age" required>
                             </td>
                         </tr>
                         <tr>
-                            <th><label for="gender">Gender :</label></th>
-                            <td><input type="radio" name="gender" value="male" required>Male
-                                <input type="radio" name="gender" value="female" required>Female
+                            <td>
+                                <label for="Gender"> Gender :</label>
                             </td>
-                        <tr>
-                            <th><label for="designation">Designation :</label></th>
-                            <td><input type="text" id="designation" required></td>
+                            <td><input type="radio" name="gender" value="male" required> Male
+                                <input type="radio" name="gender" value="female"> Female
+                            </td>
                         </tr>
                         <tr>
-                            <th><label for="salary">Salary :</label></th>
-                            <td><input type="number" id="salary" required></td>
+                            <td>
+                                <label for="designation"> Designation :</label>
+                            </td>
+                            <td>
+                                <input type="text" id="designation" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="salary"> Salary :</label>
+                            </td>
+                            <td>
+                                <input type="number" id="salary" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="city">Location :</label>
+                            </td>
+                            <td>
+                                <select name="loaction" id="city">
+                                    <option value="ahmedabad">Ahmedabad</option>
+                                    <option value="broda">Broda</option>
+                                    <option value="chandkheda">Chandkheda</option>
+                                    <option value="rajkot">Rajkot</option>
+                                    <option value="junagadh">Junagadh</option>
+                                    <option value="jamnagar">Jamnagar</option>
+                                    <option value="dwarka">Dwarka</option>
+                                    <option value="vapi">Vapi</option>
+                                    <option value="surat">Surat</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email"> EmailID :</label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="doj"> Date Of Joining :</label>
+                            </td>
+                            <td>
+                                <input type="date" id="doj" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="contact"> Contact No. :</label>
+                            </td>
+                            <td>
+                                <input type="tel" id="contact" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="submit">
+                            </td>
                         </tr>
 
 
-
-                        <tr>
-                            <th><label for="location">Location</label></th>
-
-                            <td><select id="city" nmae="Location">
-                                    <option value="ahmedabad" id="location">Ahmedabad</option>
-                                    <option value="surat" id="location">Surat</option>
-                                    <option value="vadodara" id="location">vadodara</option>
-                                    <option value="mumbai" id="location">Mumbai</option>
-
-                                </select></td>
-                        </tr>
+                    </form>
+                </table>
 
 
-                        <tr>
-                            <th><label for="email">Email :</label></th>
-                            <td><input type="email" id="email" required></td>
 
-                        <tr>
-                            <th><label for="date">Date of Joining : </label></th>
-                            <td><input type="date" id="date" required></td>
-                        </tr>
-
-                        <tr>
-                            <th><label for="contactno">Contactno : </label></th>
-                            <td><input type="tel" name="contactno" id="contactno" pattern="[0-9]{10}" required
-                                    minlength="10" maxlength="10"></td>
-                        </tr><br />
-
-                    </table>
-                    <input type="submit" value="Submit" id="submit">
-                </form>
             </div>
         </div>
     </div>

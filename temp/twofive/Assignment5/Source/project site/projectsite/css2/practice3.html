@@ -11,14 +11,22 @@
 
     </link>
     <style>
-        .flexbox {
-            display: flex;
-            margin: 2%;
-            flex-flow: row;
+        .container1 {
+            border: 1px solid blue;
+            padding: 5px;
         }
 
-        .flexbox>div {
-            margin: 5px;
+        #h11 {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+
+        @media only screen and (max-width: 500px) {
+            .container1 {
+                border: 1px solid red;
+            }
         }
     </style>
 </head>
@@ -27,20 +35,19 @@
 
     <div class="header">
         <div class="image">
-            <image width="70px" height="100%"
-                src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nlyp3wginjtr4jee8zon"
-                alt="radix logo"></image>
+            <image width="70px" height="100%" src="download.jpeg" alt="radix logo"></image>
         </div>
         <div class="nav">
             <a href="../index.html">Home</a>
             <a href="../html.html">HTML</a>
-            <a href="css.html">CSS</a>
+            <a href="../css.html">CSS</a>
             <a href="#">Bootstrap</a>
             <a href="#">JavaScript</a>
             <a href="#">JQuery</a>
             <a href="#">Mini Project</a>
             <a href="#">SQL</a>
         </div>
+    </div>
 
     </div>
     <div class="page">
@@ -87,16 +94,12 @@
                 </ul>
             </ul>
         </div>
-
-        <div class="flexbox">
-            <div class="item1">
-                item1
-            </div>
-            <div class="item2">
-                item2
-            </div>
-            <div class="item3">
-                item3
+        <div class="image">
+            <div class="container1">
+                <div class="header1">
+                    <h1 id="h11">Header</h1>
+                    <p>Resize screen width below 500px, border color change to red.</p>
+                </div>
             </div>
         </div>
 
